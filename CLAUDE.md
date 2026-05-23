@@ -71,19 +71,17 @@ nppPluginList/
 
 ## How to add a new plugin
 
-1. Build the release `.so` and upload it to the plugin's GitHub Releases.
-2. Compute the SHA-256 of the `.so`:
-   ```sh
-   sha256sum HelloPlugin.so
-   ```
-3. Add a new object to `v1/notetux_plugin_list.json` in alphabetical position.
-4. Open a PR — CI will validate the JSON and check the URL is reachable.
-5. Merge to `main` after review.
+1. Push a version tag (`v0.1.0`) to the plugin's repo — CI builds the `.so` and uploads
+   `<PluginName>.so` and `<PluginName>.so.sha256` as GitHub Release assets automatically.
+2. Download `<PluginName>.so.sha256` from the release page and copy the hex digest.
+3. Add a new object to `v1/notetux_plugin_list.json` in alphabetical position by `name`.
+4. Open a PR — CI validates the JSON.
+5. Merge to `main`.
 
 ## How to update a plugin version
 
-1. Upload the new `.so` as a new GitHub Release asset in the plugin's own repo.
-2. Recompute the SHA-256.
+1. Push a new tag to the plugin's repo → CI produces new `.so` and `.sha256` release assets.
+2. Copy the new hash from the `.sha256` asset.
 3. In `v1/notetux_plugin_list.json`, update `version`, `repository.download`, and
    `repository.sha256` for that plugin entry.
 4. PR + merge.
