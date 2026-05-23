@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Compare",
+    "displayName": "Compare",
+    "version": "0.0.0",
+    "author": "Andrea",
+    "description": "Side-by-side visual diff of two open documents with scroll-lock and intra-line highlighting.",
+    "homepage": "https://github.com/notetux-plus-plus/compare",
+    "minAppVersion": "1.0.0",
+    "repository": {
+      "download": "https://github.com/notetux-plus-plus/compare/releases/download/v0.0.0/Compare.so",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  {
+    "name": "HelloPlugin",
+    "displayName": "Hello Plugin",
+    "version": "1.0.0",
+    "author": "Andrea",
+    "description": "Minimal example plugin for Notetux++ — shows the current file path in a dialog.",
+    "homepage": "https://github.com/notetux-plus-plus/hello_world",
+    "minAppVersion": "1.0.0",
+    "repository": {
+      "download": "https://github.com/notetux-plus-plus/hello_world/releases/download/v1.0.0/HelloPlugin.so",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  {
+    "name": "JsonViewer",
+    "displayName": "JSON Viewer",
+    "version": "0.0.0",
+    "author": "Andrea",
+    "description": "Parse and display JSON as an interactive tree panel; format, minify, and validate JSON in the editor.",
+    "homepage": "https://github.com/notetux-plus-plus/json_viewer",
+    "minAppVersion": "1.0.0",
+    "repository": {
+      "download": "https://github.com/notetux-plus-plus/json_viewer/releases/download/v0.0.0/JsonViewer.so",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  {
+    "name": "NppFTP",
+    "displayName": "NppFTP",
+    "version": "0.0.0",
+    "author": "Andrea",
+    "description": "Remote file editing over FTP, SFTP, and SCP with a dockable file browser panel.",
+    "homepage": "https://github.com/notetux-plus-plus/npp_ftp",
+    "minAppVersion": "1.0.0",
+    "repository": {
+      "download": "https://github.com/notetux-plus-plus/npp_ftp/releases/download/v0.0.0/NppFTP.so",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  }
+]
